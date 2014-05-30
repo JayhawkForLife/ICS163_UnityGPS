@@ -57,13 +57,14 @@ public class MyGUIScript : MonoBehaviour {
 
 		bool oldPenDown = pen_down;
 
-		pen_down = GUI.Toggle (new Rect(0, 300, Screen.width, 100), pen_down, "Pen Down");
+		pen_down = GUI.Toggle (new Rect(0, 600, Screen.width, 100), pen_down, "Pen Down");
 
 		if(GUI.changed){
 			if(oldPenDown != pen_down){
 
 				if(!pen_down)
 				{
+					network_helper.addStrokeColor(stroke_name.ToString(), pen_color);
 					stroke_name++;
 				}
 
@@ -71,17 +72,16 @@ public class MyGUIScript : MonoBehaviour {
 			
 		}
 
-		if(GUI.Button (new Rect(0, 400, Screen.width, 100), "Upload"))
+		if(GUI.Button (new Rect(0, 700, Screen.width, 100), "Upload"))
 		{
 			// Upload the data
 			if(!pen_down)
 			{
-				network_helper.addStrokeColor("Stroke Name", pen_color);
 				network_helper.uploadPoints(group_name, drawing_name);
 			}
 		}
 
-		int tempy = 500;
+		int tempy = 800;
 		foreach(string d in debugs)
 		{
 			GUI.Label (new Rect(0, tempy, Screen.width, 100),d);
@@ -102,7 +102,6 @@ public class MyGUIScript : MonoBehaviour {
 	{
 		pen_color = color;
 		addDebug ("NewColor" + color);
-
 	}
 
 	void OnGetColor(ColorPicker picker)
