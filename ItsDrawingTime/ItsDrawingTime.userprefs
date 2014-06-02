@@ -1,11 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/myLocationScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\myLocationScript.cs">
     <Files>
-      <File FileName="Assets/myNetworkHelper.cs" Line="5" Column="15" />
-      <File FileName="Assets/MiniJSON.cs" Line="62" Column="4" />
-      <File FileName="Assets/MyGUIScript.cs" Line="99" Column="1" />
-      <File FileName="Assets/myLocationScript.cs" Line="31" Column="3" />
+      <File FileName="Assets\MyGUIScript.cs" Line="90" Column="16" />
+      <File FileName="Assets\myLocationScript.cs" Line="98" Column="1" />
+      <File FileName="Assets\myNetworkHelper.cs" Line="118" Column="16" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

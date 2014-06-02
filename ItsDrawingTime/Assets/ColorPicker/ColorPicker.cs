@@ -27,8 +27,8 @@ public class ColorPicker : MonoBehaviour {
 	}; 
 	ESTATE mState = ESTATE.Hidden;
 	
-	int sizeFull = 200;
-	int sizeHidden = 20;
+	public int sizeFull = 200;
+	public int sizeHidden = 20;
 	float animTime = 0.25f;
 	float dt = 0;
 

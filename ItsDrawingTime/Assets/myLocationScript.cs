@@ -74,6 +74,10 @@ public class myLocationScript : MonoBehaviour {
 					                        (double)Input.location.lastData.longitude, (double)Input.location.lastData.altitude);
 
 					lastLongitude = Input.location.lastData.longitude;
+
+					local_gui.addDebug("Location: " + Input.location.lastData.latitude + " " +
+					                   Input.location.lastData.longitude + " " +
+					                   (long)Input.location.lastData.timestamp);
 				}
 				//Input.location.lastData.latitude;
 				//Input.location.lastData.altitude;
